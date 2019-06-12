@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../public/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        {{#if err}}
+        <span class="sdata" style="font-size: 24px;">{{err}}</span>
+        {{/if }}
+
+        <form action="/" method="POST">
+            <input type="text" name="location" id="search" placeholder="Enter your location"><button type="submit"
+                id="submit">Find</button>
+        </form>
+
+
+
+        {{#if loc}}
+        <img src="../public/img/01d.svg" id="icon" alt="icon" style="width:120px;height:120px">
+        <p class="temp"><span class="temp">{{info.temp}}<span>&#8451;</span></p><br>
+
+        <img src="../public/img/city.svg" alt="city" class="dicon">
+        <p class="data">City: <span class="sdata">{{info.name}}</span></p><br>
+        <img src="../public/img/pressure.svg" alt="pressure" class="dicon">
+        <p class="data">Pressure: <span class="sdata">{{info.pressure}}</span></p><br>
+        <img src="../public/img/humidity.svg" alt="humidity" class="dicon">
+        <p class="data">Humidity: <span class="sdata">{{info.humidity}}%</span></p><br>
+        <img src="../public/img/wind.svg" alt="wind" class="dicon">
+        <p class="data">Wind: <span class="sdata">{{info.speed}}km/hr</span></p><br>
+        {{/if }}
+
+
+    </div>
+</body>
+
+</html>

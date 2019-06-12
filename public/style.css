@@ -1,0 +1,129 @@
+#search {
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 70%;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 17px;
+    text-align: center;
+    color: black;
+    background: none;
+
+}
+
+#submit {
+    margin-left: 5px;
+    width: 100px;
+    height: 45px;
+    border: none;
+    background-color: #410093;
+    border-radius: 3px;
+    color: white;
+    font-size: 17px;
+
+
+}
+
+.container {
+    text-align: center;
+}
+
+
+
+
+
+p.temp {
+    color: #b92b27;
+    padding: 25px;
+    display: inline;
+    font-size: 80px;
+    vertical-align: 33px;
+
+}
+
+.sdata {
+    color: #bd081c;
+}
+
+
+
+img {
+    margin-top: 22px;
+}
+
+/* span.temp {
+    font-size: 25px;
+    vertical-align: 35px;
+    color: #2276E3;
+    display: inline;
+} */
+
+
+#icon {
+    width: 25%;
+    height: 25%;
+}
+
+body {
+    background-image: url('./img/background.png');
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+p.data {
+    color: #410093;
+    font-size: 30px;
+    display: inline;
+    vertical-align: 14px;
+}
+
+/* .data {
+    color: #2276E3;
+    font-size: 30px;
+} */
+
+h1:first {
+    display: inline;
+}
+
+
+.dicon {
+    width: 45px;
+    height: 45px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:400px) {
+    #search {
+        width: 60%;
+        height: 40px;
+        margin: 0, auto;
+        font-size: 17px;
+        text-align: center;
+
+    }
+
+    body {
+        background-image: url('./img/sbackgound.jpg');
+    }
+
+    #submit {
+        width: 75px;
+        font-size: 17px;
+        background-color: #63b538;
+    }
+}
